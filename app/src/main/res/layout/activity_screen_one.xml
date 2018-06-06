@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbanan"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        card_view:cardBackgroundColor="@color/colorbackgroundcontent"
+        card_view:cardCornerRadius="@dimen/margin_5"
+        card_view:cardElevation="@dimen/margin_5"
+        card_view:contentPadding="@dimen/margin_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160"
+            android:background="@color/colorbackgroundcontent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/pading_5">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/width_80"
+                    android:layout_height="@dimen/height_80"
+                    android:src="@drawable/imguser" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:gravity="left"
+                    android:text="PHẠM VĂN CHÍNH"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_23"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtName"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:text="14033001"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/pading_5">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="@dimen/width_80"
+                    android:layout_height="@dimen/height_80"
+                    android:src="@drawable/imguser1" />
+
+                <TextView
+                    android:id="@+id/tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/profile"
+                    android:gravity="left"
+                    android:text="Nguyễn Thị Ngọc Diện"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_23"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_toEndOf="@+id/profile"
+                    android:text="14122551"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_18" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cr"
+        android:layout_margin="@dimen/margin_10"
+        card_view:cardBackgroundColor="@color/colorbackgroundcontent"
+        card_view:cardCornerRadius="@dimen/margin_5"
+        card_view:cardElevation="@dimen/margin_5"
+        card_view:contentPadding="@dimen/margin_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80"
+            android:layout_alignParentBottom="true"
+            android:paddingEnd="@dimen/pading_25"
+            android:paddingStart="@dimen/pading_25">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/weight"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_directions_walk_white_24dp"
+                app:civ_border_color="@color/colorbackground"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/nhietdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_toEndOf="@+id/weight"
+                android:text="82"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_20" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_toEndOf="@+id/nhietdo"
+                android:text="C"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_20" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/bmp"
+                android:layout_width="@dimen/width_40"
+                android:layout_height="@dimen/height_40"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/docao"
+                android:src="@drawable/baseline_directions_walk_white_24dp"
+                app:civ_border_color="@color/colorbackground"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/docao"
+                android:layout_toStartOf="@+id/txtdocao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10"
+                android:text="96"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_20" />
+            <TextView
+                android:id="@+id/txtdocao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_10"
+                android:text="Mét"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_20" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cr2"
+        android:paddingStart="@dimen/pading_25"
+        android:paddingEnd="@dimen/pading_25"
+        android:paddingBottom="@dimen/pading_5"
+        android:paddingTop="@dimen/pading_5">
+        <TextView
+            android:id="@+id/nhiptim"
+            android:background="@drawable/custom_bg_content_screenone"
+            android:padding="@dimen/pading_20"
+            android:textSize="@dimen/tv_35"
+            android:text="abc"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toEndOf="@id/nhiptim"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_25"
+            android:layout_marginTop="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:text="BPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/nhiptim"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textSize="@dimen/tv_23"
+            android:text="Nhịp Tim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/apxuat"
+            android:layout_toStartOf="@+id/txtapxuat"
+            android:background="@drawable/custom_bg_content_screenone"
+            android:padding="@dimen/pading_20"
+            android:textSize="@dimen/tv_35"
+            android:text="abc"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtapxuat"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/tv_25"
+            android:layout_marginTop="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:text="BAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/apxuat"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin_30"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textSize="@dimen/tv_23"
+            android:text="Áp Suất"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/macbt"
+            android:textSize="23sp"
+            android:text="asv"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+        <include layout="@layout/handlerbt"/>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
